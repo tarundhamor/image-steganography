@@ -1,0 +1,34 @@
+body {
+  font-family: Tahoma;
+  font-size: 14px;
+  /*border: 2px solid;
+   padding-top: 4px;*/
+}
+
+.heading {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border: 3px solid;
+  background-color: white;
+}
+
+#textFile,
+#coverImg,
+#loadFile {
+  color: green;
+}
+
+#canvas,
+#secret,
+#coverAfter {
+  border: 1px solid;
+}

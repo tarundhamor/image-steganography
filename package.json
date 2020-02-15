@@ -1,0 +1,14 @@
+{
+  "name": "steganography-algo",
+  "version": "1.0.0",
+  "description": "Implementation of steganography algorithm to hide text in images and decode them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TD",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

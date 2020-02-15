@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Implementation of Steganography</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <br />
+    <div class="heading">
+      <h2>Implementation of Image Steganography</h2>
+      <p>
+        Image Steganography refers to the process of hiding data within an image
+        file. The image selected for this purpose is called the cover-image and
+        the image obtained after steganography is called the stego-image. -
+        GeeksforGeeks
+      </p>
+      <p>
+        Secret communication and watermarking are two main objectives of
+        steganography being used.
+      </p>
+    </div>
+
+    <div class="container">
+      <b>Step 1 </b>- Select data you want to encode:
+      <input type="file" id="textFile" />
+      <hr />
+      <br />
+      <b>Step 2 </b>- Select an image to hide data:
+      <input type="file" id="coverImg" />
+      <hr />
+
+      <br />
+      <b>Step 3 </b> - Click to hide data into image:
+      <button id="hideData">Hide Data into Image</button>
+      <hr />
+      Original Image(before hiding):<br />
+      <br />
+
+      <canvas id="canvas" width="300" height="300"></canvas>
+      <hr />
+      <b>Step 4 </b> - Image + Data hidden inside (after hiding), right click on
+      image and save to your PC:
+      <br />
+
+      <br />
+      <canvas id="secret" width="300" height="300"></canvas>
+      <hr />
+      <br />
+      <b>Step 5 </b> - Load back the image from previous step to decode it:
+      <input type="file" id="loadFile" />
+      <hr />
+      The converted image is displayed, and file containing hidden text is
+      downloaded on local system.<br /><br />
+      <canvas id="coverAfter" width="300" height="300"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="design.js"></script>
+  </body>
+</html>
